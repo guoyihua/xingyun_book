@@ -40,10 +40,9 @@ function cbSearch(resp) {
     if(result!=null &&result!="null" &&result!="[]"){
         $("#con").html("");
         console.log("return of rpc call: " + JSON.stringify(result))
-        result = JSON.parse(result);
-        console.log("return of rpc call: " + JSON.stringify(result))
-        if(result.length>1){
-            
+        if(result.indexOf("[{")!=-1){
+            result = JSON.parse(result);
+            console.log("return of rpc call: " + JSON.stringify(result))
             for(var i=0;i<result.length;i++){
                 $("#con").append('<div class="search-again form-item-wrap" id="append">'+
                 '好书：'+
