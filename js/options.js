@@ -6,7 +6,6 @@ $("#query").click(function(){
 $("#add").click(function(){
     $("#query1").hide();
     $("#add1").show();
-    $("#con").hide();
 })
 var NebPay = require("nebpay");     
 var nebPay = new NebPay();
