@@ -12,7 +12,7 @@ var nebPay = new NebPay();
 
 
 
-var dappAddress = "n1yhXHXFbnXpusHaL7jDJ94U8YYymmPH35P";
+var dappAddress = "n1p995WaURFFxfp5HSV67N8NHyfCSeg9V2W";
 $("#query23").click(function(){
     q("getNewBook");
 })
